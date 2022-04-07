@@ -22,6 +22,11 @@
 
 
 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -57,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">12 min read</span>
     
 
     <h1 class="article-title">Does quarterback talent affect their local fans&#39; interest in the team?</h1>
@@ -71,12 +76,1005 @@
 
 
 <p>Does quarterback talent solely affect their local fans’ interest in the team?</p>
-<p>Did you watch the Bills vs. Chiefs Divisional Round playoff game in January? It’s ok if you didn’t, more than <strong>[51 million]</strong> (<a href="https://www.sportsvideo.org/2022/01/28/ratings-roundup-chiefs-bills-instant-classic-becomes-most-watched-nfl-divisional-game-in-five-years-on-cbs/#" class="uri">https://www.sportsvideo.org/2022/01/28/ratings-roundup-chiefs-bills-instant-classic-becomes-most-watched-nfl-divisional-game-in-five-years-on-cbs/#</a>:~:text=The%20audience%20for%20Bills%2DChiefs,viewers%20for%2049ers%2DCowboys) people might be able to clue you in. Yes you read that correctly, CBS hosted one of the biggest events in the last 5 years for a typical NFL playoff weekend. The game was a back and forth tug-of-war that left jaws on the floor as the Chiefs pulled away with a sudden death touchdown. In just the final two minutes of regulation, there were 24 points scored and 3 lead changes.</p>
+<p>Did you watch the Bills vs. Chiefs Divisional Round playoff game in January? It’s ok if you didn’t, more than <a href="https://www.sportsvideo.org/2022/01/28/ratings-roundup-chiefs-bills-instant-classic-becomes-most-watched-nfl-divisional-game-in-five-years-on-cbs/#:~:text=The%20audience%20for%20Bills%2DChiefs,viewers%20for%2049ers%2DCowboys">51 million</a> people might be able to clue you in. Yes you read that correctly, CBS hosted one of the biggest events in the last 5 years for a typical NFL playoff weekend. The game was a back and forth tug-of-war that left jaws on the floor as the Chiefs pulled away with a sudden death touchdown. In just the final two minutes of regulation, there were 24 points scored and 3 lead changes.</p>
 <p>Translation: quarterback hypnosis.</p>
 <p>The tit for tat contest was enough to even get the casual fan intrigued. However, this game had one extra element to delight its audience; the battle for quarterback supremacy. Buffalo’s Josh Allen and Kansas City’s Patrick Mahomes put on a show for the ages to prove (once again) the NFL was the real winner of the weekend. Ever since Patrick Mahomes, Josh Allen, and other young signal callers burst onto the scene, ball clubs around the league have scoured the draft and free agency for their own QBs to combat these superheroes. But does QB production actually get their city invested in the team?</p>
 <p>Let’s dive into the numbers.</p>
 <p>Sports Reference provides all sorts of statistics of every metric of a quarterback’s performance. TV ratings were obtained from the Sports Business Journal which collected data from all 32 NFL teams’ local household ratings in their respective market. When observing a quarterback’s performance and their relationship with local fan interest, we will observe the following categories: passing yards per game, passing touchdowns, rushing yards per game, and their wins.</p>
 <p>Let’s take a close look at super bowl champion Matthew Stafford. Matthew Stafford tied a career high in touchdowns and was top 5 in passing yards per game. In a fantasy football driven league, that has to mean something right?</p>
+<pre><code>## # A tibble: 1 × 2
+##   Touchdowns `Pass Y/G`
+##        &lt;dbl&gt;      &lt;dbl&gt;
+## 1       23.1       236.</code></pre>
+<p><img src="http://petereducate.github.io/2022/04/07/does-quarterback-talent-affect-their-local-fans-interest-in-the-team/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Wow is this dude underappreciated. Jameis Winston scored a higher local TV audience and he was filling in for some guy named Drew Brees. There must be something that can better explain this insanity in the inconsistencies of QB play. Perhaps fans don’t want to see a pure pocket passer. The recent emergence of the “mobile” QB has taken this league by storm with incredible highlights. Let’s see if a quarterback’s rushing ability has some answer.</p>
+<div id="tdlecbremu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#tdlecbremu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#tdlecbremu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#tdlecbremu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#tdlecbremu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#tdlecbremu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#tdlecbremu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#tdlecbremu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#tdlecbremu .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#tdlecbremu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#tdlecbremu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#tdlecbremu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#tdlecbremu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#tdlecbremu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tdlecbremu .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#tdlecbremu .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#tdlecbremu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tdlecbremu .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#tdlecbremu .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tdlecbremu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#tdlecbremu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tdlecbremu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#tdlecbremu .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#tdlecbremu .gt_left {
+  text-align: left;
+}
+
+#tdlecbremu .gt_center {
+  text-align: center;
+}
+
+#tdlecbremu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#tdlecbremu .gt_font_normal {
+  font-weight: normal;
+}
+
+#tdlecbremu .gt_font_bold {
+  font-weight: bold;
+}
+
+#tdlecbremu .gt_font_italic {
+  font-style: italic;
+}
+
+#tdlecbremu .gt_super {
+  font-size: 65%;
+}
+
+#tdlecbremu .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#tdlecbremu .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#tdlecbremu .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#tdlecbremu .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#tdlecbremu .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Player</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Rushing Yards</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">GS</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Rushing Y/G</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Average Local TV Viewers (Per Million)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Lamar Jackson</td>
+<td class="gt_row gt_left">BAL</td>
+<td class="gt_row gt_right">767</td>
+<td class="gt_row gt_right">12</td>
+<td class="gt_row gt_right">63.9</td>
+<td class="gt_row gt_right">27.91</td></tr>
+    <tr><td class="gt_row gt_left">Jalen Hurts</td>
+<td class="gt_row gt_left">PHI</td>
+<td class="gt_row gt_right">784</td>
+<td class="gt_row gt_right">15</td>
+<td class="gt_row gt_right">52.3</td>
+<td class="gt_row gt_right">25.41</td></tr>
+    <tr><td class="gt_row gt_left">Josh Allen</td>
+<td class="gt_row gt_left">BUF</td>
+<td class="gt_row gt_right">763</td>
+<td class="gt_row gt_right">17</td>
+<td class="gt_row gt_right">44.9</td>
+<td class="gt_row gt_right">47.16</td></tr>
+    <tr><td class="gt_row gt_left">Justin Fields</td>
+<td class="gt_row gt_left">CHI</td>
+<td class="gt_row gt_right">420</td>
+<td class="gt_row gt_right">10</td>
+<td class="gt_row gt_right">35.0</td>
+<td class="gt_row gt_right">22.15</td></tr>
+    <tr><td class="gt_row gt_left">Kyler Murray</td>
+<td class="gt_row gt_left">ARI</td>
+<td class="gt_row gt_right">423</td>
+<td class="gt_row gt_right">14</td>
+<td class="gt_row gt_right">30.2</td>
+<td class="gt_row gt_right">20.87</td></tr>
+    <tr><td class="gt_row gt_left">Daniel Jones</td>
+<td class="gt_row gt_left">NYG</td>
+<td class="gt_row gt_right">298</td>
+<td class="gt_row gt_right">11</td>
+<td class="gt_row gt_right">27.1</td>
+<td class="gt_row gt_right">8.39</td></tr>
+    <tr><td class="gt_row gt_left">Jameis Winston</td>
+<td class="gt_row gt_left">NOR</td>
+<td class="gt_row gt_right">166</td>
+<td class="gt_row gt_right">7</td>
+<td class="gt_row gt_right">23.7</td>
+<td class="gt_row gt_right">40.89</td></tr>
+    <tr><td class="gt_row gt_left">Patrick Mahomes</td>
+<td class="gt_row gt_left">KAN</td>
+<td class="gt_row gt_right">381</td>
+<td class="gt_row gt_right">17</td>
+<td class="gt_row gt_right">22.4</td>
+<td class="gt_row gt_right">45.28</td></tr>
+    <tr><td class="gt_row gt_left">Trevor Lawrence</td>
+<td class="gt_row gt_left">JAX</td>
+<td class="gt_row gt_right">334</td>
+<td class="gt_row gt_right">17</td>
+<td class="gt_row gt_right">19.6</td>
+<td class="gt_row gt_right">19.67</td></tr>
+    <tr><td class="gt_row gt_left">Taylor Heinicke</td>
+<td class="gt_row gt_left">WAS</td>
+<td class="gt_row gt_right">313</td>
+<td class="gt_row gt_right">15</td>
+<td class="gt_row gt_right">19.6</td>
+<td class="gt_row gt_right">16.64</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+<div id="xonwvmdbdg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#xonwvmdbdg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#xonwvmdbdg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#xonwvmdbdg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#xonwvmdbdg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#xonwvmdbdg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#xonwvmdbdg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#xonwvmdbdg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#xonwvmdbdg .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#xonwvmdbdg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#xonwvmdbdg .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#xonwvmdbdg .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#xonwvmdbdg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#xonwvmdbdg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xonwvmdbdg .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#xonwvmdbdg .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#xonwvmdbdg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xonwvmdbdg .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#xonwvmdbdg .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xonwvmdbdg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#xonwvmdbdg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xonwvmdbdg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xonwvmdbdg .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xonwvmdbdg .gt_left {
+  text-align: left;
+}
+
+#xonwvmdbdg .gt_center {
+  text-align: center;
+}
+
+#xonwvmdbdg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#xonwvmdbdg .gt_font_normal {
+  font-weight: normal;
+}
+
+#xonwvmdbdg .gt_font_bold {
+  font-weight: bold;
+}
+
+#xonwvmdbdg .gt_font_italic {
+  font-style: italic;
+}
+
+#xonwvmdbdg .gt_super {
+  font-size: 65%;
+}
+
+#xonwvmdbdg .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#xonwvmdbdg .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#xonwvmdbdg .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#xonwvmdbdg .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#xonwvmdbdg .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="6" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: center; font-weight: bold;">Does a QB's rushing ability impact its team's local ratings?</th>
+    </tr>
+    <tr>
+      <th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: center;">Fans are inconsistent when it comes to their QB's running ability.</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Player</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Rushing Yards</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">GS</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Rushing Y/G</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;">Average Local TV Viewers (Per Million)</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="background-color: #241773; color: #FFFFFF;">Lamar Jackson</td>
+<td class="gt_row gt_left" style="background-color: #241773; color: #FFFFFF;">BAL</td>
+<td class="gt_row gt_right" style="background-color: #241773; color: #FFFFFF;">767</td>
+<td class="gt_row gt_right" style="background-color: #241773; color: #FFFFFF;">12</td>
+<td class="gt_row gt_right" style="background-color: #241773; color: #FFFFFF;">63.9</td>
+<td class="gt_row gt_right" style="background-color: #241773; color: #FFFFFF;">27.91</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Jalen Hurts</td>
+<td class="gt_row gt_left gt_striped">PHI</td>
+<td class="gt_row gt_right gt_striped">784</td>
+<td class="gt_row gt_right gt_striped">15</td>
+<td class="gt_row gt_right gt_striped">52.3</td>
+<td class="gt_row gt_right gt_striped">25.41</td></tr>
+    <tr><td class="gt_row gt_left" style="background-color: #00338D; color: #FFFFFF;">Josh Allen</td>
+<td class="gt_row gt_left" style="background-color: #00338D; color: #FFFFFF;">BUF</td>
+<td class="gt_row gt_right" style="background-color: #00338D; color: #FFFFFF;">763</td>
+<td class="gt_row gt_right" style="background-color: #00338D; color: #FFFFFF;">17</td>
+<td class="gt_row gt_right" style="background-color: #00338D; color: #FFFFFF;">44.9</td>
+<td class="gt_row gt_right" style="background-color: #00338D; color: #FFFFFF;">47.16</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Justin Fields</td>
+<td class="gt_row gt_left gt_striped">CHI</td>
+<td class="gt_row gt_right gt_striped">420</td>
+<td class="gt_row gt_right gt_striped">10</td>
+<td class="gt_row gt_right gt_striped">35.0</td>
+<td class="gt_row gt_right gt_striped">22.15</td></tr>
+    <tr><td class="gt_row gt_left">Kyler Murray</td>
+<td class="gt_row gt_left">ARI</td>
+<td class="gt_row gt_right">423</td>
+<td class="gt_row gt_right">14</td>
+<td class="gt_row gt_right">30.2</td>
+<td class="gt_row gt_right">20.87</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Daniel Jones</td>
+<td class="gt_row gt_left gt_striped">NYG</td>
+<td class="gt_row gt_right gt_striped">298</td>
+<td class="gt_row gt_right gt_striped">11</td>
+<td class="gt_row gt_right gt_striped">27.1</td>
+<td class="gt_row gt_right gt_striped">8.39</td></tr>
+    <tr><td class="gt_row gt_left">Jameis Winston</td>
+<td class="gt_row gt_left">NOR</td>
+<td class="gt_row gt_right">166</td>
+<td class="gt_row gt_right">7</td>
+<td class="gt_row gt_right">23.7</td>
+<td class="gt_row gt_right">40.89</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Patrick Mahomes</td>
+<td class="gt_row gt_left gt_striped">KAN</td>
+<td class="gt_row gt_right gt_striped">381</td>
+<td class="gt_row gt_right gt_striped">17</td>
+<td class="gt_row gt_right gt_striped">22.4</td>
+<td class="gt_row gt_right gt_striped">45.28</td></tr>
+    <tr><td class="gt_row gt_left">Trevor Lawrence</td>
+<td class="gt_row gt_left">JAX</td>
+<td class="gt_row gt_right">334</td>
+<td class="gt_row gt_right">17</td>
+<td class="gt_row gt_right">19.6</td>
+<td class="gt_row gt_right">19.67</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Taylor Heinicke</td>
+<td class="gt_row gt_left gt_striped">WAS</td>
+<td class="gt_row gt_right gt_striped">313</td>
+<td class="gt_row gt_right gt_striped">15</td>
+<td class="gt_row gt_right gt_striped">19.6</td>
+<td class="gt_row gt_right gt_striped">16.64</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="6"><strong>By:</strong> Peter Educate  |  <strong>Sources:</strong> <a href="https://www.pro-football-reference.com/years/2021/">Sports Reference</a></td>
+    </tr>
+    <tr>
+      <td class="gt_sourcenote" colspan="6"><a href="https://www.sportsbusinessjournal.com/Journal/Issues/2022/01/24/In-Depth/NFL-Local-Ratings.aspx">Sports Business Journal</a></td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+<p>Despite the electricity of former MVP Lamar Jackson, the local fanbase is not as glued to the TV as one would think. Despite nearly averaging 20 more rush yards per game, Josh Allen has a higher local fan approval rating. Let’s get a clearer picture of rush yards per game and local TV rating.</p>
+<p>Scatterplot of RYPG/Ratings</p>
+<p>The chart reveals inconsistencies in rush yards per game explaining the local TV ratings. The dots are expected to follow the blue line but they form no discernable pattern instead. So if passing yards per game, passing touchdowns, and rushing yards per game don’t predict local TV ratings, what does winning do? Here’s the top 10 winning quarterbacks from the 2021 regular season by win percentage:</p>
+<p>Table of Top 10 Winning QBs</p>
+<p>If it weren’t for his Superbowl win, I would feel doubly bad for Matthew Stafford. Even in a city as large as Los Angeles, not enough people were wanting to watch his success in his first season as a Ram. By his standards, Patrick Mahomes had a poor season and still was watched more than the superstar Rams. However, is this observation consistent throughout all QBs in the entire league?</p>
+<p>Scatterplot of Wins/Ratings</p>
+<p>Finally, teams have a blueprint to get their local fans more interested in watching. However, should this be the end all be all argument for NFL owners?</p>
+<p>The answer: Yes…and no.</p>
+<p>In this chart, winning clearly displays a positive correlation with local TV ratings which would make sense. Winning creates a foundation of a culture that fanbases love to get behind which forms a tradition. However, you cannot attribute ratings solely to the quarterback’s team winning.
+Winning may help explain local TV ratings but there is a strong possibility that there are other variables not explained in this data. Size of the city, number of local sports teams, and data of origin of the franchise may also explain fans’ interest. The ability, play, and success of a quarterback should not be the only factors considered when attempting to project local fan interest.</p>
+<p>Ultimately, one thing remains true; the league remains in good hands with these talents under center.</p>
 
     </div>
   </article>
@@ -99,6 +1097,18 @@
 
     </div>
     
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 
