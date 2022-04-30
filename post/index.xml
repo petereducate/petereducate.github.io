@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Peter Educate&#39;s Sports Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://petereducate.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://petereducate.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What can NBA teams do to increase their fan attendance at games</title>
+      <link>http://petereducate.github.io/2022/04/30/what-can-nba-teams-do-to-increase-their-fan-attendance-at-games/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://petereducate.github.io/2022/04/30/what-can-nba-teams-do-to-increase-their-fan-attendance-at-games/</guid>
+      <description>## ## Call: ## lm(formula = nba$`Average Attendance` ~ nba$`3P%`) ## ## Residuals: ## Min 1Q Median 3Q Max ## -2175.7 -1329.1 -179.2 1128.5 2802.7 ## ## Coefficients: ## Estimate Std. Error t value Pr(&amp;gt;|t|) ## (Intercept) -7453.6 7409.7 -1.006 0.32306 ## nba$`3P%` 696.9 209.4 3.328 0.00246 ** ## --- ## Signif. codes: 0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1 ## ## Residual standard error: 1569 on 28 degrees of freedom ## Multiple R-squared: 0.</description>
+    </item>
+    
     <item>
       <title>Does quarterback talent affect their local fans&#39; interest in the team?</title>
       <link>http://petereducate.github.io/2022/04/07/does-quarterback-talent-affect-their-local-fans-interest-in-the-team/</link>
