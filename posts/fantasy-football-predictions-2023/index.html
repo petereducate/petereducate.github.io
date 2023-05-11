@@ -388,32 +388,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span> </span>
 <span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Player"</span>,</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="at">nfl_team =</span> <span class="st">"Team"</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Does Hoiberg's offense push threes more than Miles?"</span>,</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Nebraska wasn't in the top 100 of teams shooting more threes. These 10 teams completely changed their offense."</span></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span>  </span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"**By:** Matt Waite  |  **Source:** [Sports Reference](https://www.sports-reference.com/cbb/seasons/)"</span>)</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>     <span class="at">locations =</span> <span class="fu">cells_column_labels</span>(<span class="at">columns =</span> <span class="fu">everything</span>()),</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>     <span class="at">style =</span> <span class="fu">list</span>(</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_borders</span>(<span class="at">sides =</span> <span class="st">"bottom"</span>, <span class="at">weight =</span> <span class="fu">px</span>(<span class="dv">3</span>)),</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_text</span>(<span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">size=</span><span class="dv">12</span>)</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>     )</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>   ) <span class="sc">%&gt;%</span></span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_row_striping</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_table_lines</span>(<span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="at">nfl_team =</span> <span class="st">"Team"</span>,</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    <span class="at">overall =</span> <span class="st">"Draft Position"</span>,</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    <span class="at">.pred =</span> <span class="st">"Predicted Fantasy Points"</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Top 5 Rookie Receivers Based on Fantasy Expectation"</span>,</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"No Trey Palmer unfortunately..."</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span>  </span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"**By:** Peter Educate |  **Source:** [Pro Football Reference](https://www.sports-reference.com/cfb/seasons/)"</span>)</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>     <span class="at">locations =</span> <span class="fu">cells_column_labels</span>(<span class="at">columns =</span> <span class="fu">everything</span>()),</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>     <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_borders</span>(<span class="at">sides =</span> <span class="st">"bottom"</span>, <span class="at">weight =</span> <span class="fu">px</span>(<span class="dv">3</span>)),</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_text</span>(<span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">size=</span><span class="dv">12</span>)</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>     )</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>   ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_row_striping</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_table_lines</span>(<span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
@@ -831,18 +833,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <td colspan="4" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Does Hoiberg's offense push threes more than Miles?</td>
+      <td colspan="4" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Top 5 Rookie Receivers Based on Fantasy Expectation</td>
     </tr>
     <tr>
-      <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">Nebraska wasn't in the top 100 of teams shooting more threes. These 10 teams completely changed their offense.</td>
+      <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">No Trey Palmer unfortunately...</td>
     </tr>
   </thead>
   <thead class="gt_col_headings">
     <tr>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Player">Player</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Team">Team</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="overall">overall</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id=".pred">.pred</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Draft Position">Draft Position</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Predicted Fantasy Points">Predicted Fantasy Points</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -869,7 +871,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </tbody>
   <tfoot class="gt_sourcenotes">
     <tr>
-      <td class="gt_sourcenote" colspan="4"><strong>By:</strong> Matt Waite  |  <strong>Source:</strong> <a href="https://www.sports-reference.com/cbb/seasons/">Sports Reference</a></td>
+      <td class="gt_sourcenote" colspan="4"><strong>By:</strong> Peter Educate |  <strong>Source:</strong> <a href="https://www.sports-reference.com/cfb/seasons/">Pro Football Reference</a></td>
     </tr>
   </tfoot>
   
@@ -878,6 +880,507 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p>According to my current predictors, Jayden Reed of the Packers is set to lead all rookie WRs in fantasy points with 151.9 followed by Quentin Johnston of the Chargers, then Giants’ Jalin Hyatt, then Broncos’ Marvin Mims, and Panthers’ Johnathan Mingo rounding out the top 5. Let’s see how these rookies would compare to former rookie seasons in the NFL.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wrstats <span class="sc">%&gt;%</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, nfl_team, year, FantPt) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(FantPt)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">top_n</span>(<span class="dv">5</span>, FantPt) <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Player"</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">nfl_team =</span> <span class="st">"Team"</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">year =</span> <span class="st">"Year"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">FantPt =</span> <span class="st">"Fantasy Points"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Top 5 Best Rookie Receivers Based on Fantasy Production"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Yeah Ja'Marr Chase is built a little different"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span>  </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"**By:** Peter Educate |  **Source:** [Pro Football Reference](https://www.sports-reference.com/cfb/seasons/)"</span>)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>     <span class="at">locations =</span> <span class="fu">cells_column_labels</span>(<span class="at">columns =</span> <span class="fu">everything</span>()),</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>     <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_borders</span>(<span class="at">sides =</span> <span class="st">"bottom"</span>, <span class="at">weight =</span> <span class="fu">px</span>(<span class="dv">3</span>)),</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>       <span class="fu">cell_text</span>(<span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">size=</span><span class="dv">12</span>)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>     )</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>   ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_row_striping</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_table_lines</span>(<span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div id="ndmjfjkkxq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+:where(#ndmjfjkkxq) .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: none;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+:where(#ndmjfjkkxq) .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+:where(#ndmjfjkkxq) .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+:where(#ndmjfjkkxq) .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_column_spanner {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+:where(#ndmjfjkkxq) .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+:where(#ndmjfjkkxq) .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+:where(#ndmjfjkkxq) .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: none;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+:where(#ndmjfjkkxq) .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+:where(#ndmjfjkkxq) .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+:where(#ndmjfjkkxq) .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_first_summary_row {
+  border-top-style: none;
+  border-top-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+:where(#ndmjfjkkxq) .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: none;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+:where(#ndmjfjkkxq) .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+:where(#ndmjfjkkxq) .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_left {
+  text-align: left;
+}
+
+:where(#ndmjfjkkxq) .gt_center {
+  text-align: center;
+}
+
+:where(#ndmjfjkkxq) .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+:where(#ndmjfjkkxq) .gt_font_normal {
+  font-weight: normal;
+}
+
+:where(#ndmjfjkkxq) .gt_font_bold {
+  font-weight: bold;
+}
+
+:where(#ndmjfjkkxq) .gt_font_italic {
+  font-style: italic;
+}
+
+:where(#ndmjfjkkxq) .gt_super {
+  font-size: 65%;
+}
+
+:where(#ndmjfjkkxq) .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+:where(#ndmjfjkkxq) .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+:where(#ndmjfjkkxq) .gt_indent_1 {
+  text-indent: 5px;
+}
+
+:where(#ndmjfjkkxq) .gt_indent_2 {
+  text-indent: 10px;
+}
+
+:where(#ndmjfjkkxq) .gt_indent_3 {
+  text-indent: 15px;
+}
+
+:where(#ndmjfjkkxq) .gt_indent_4 {
+  text-indent: 20px;
+}
+
+:where(#ndmjfjkkxq) .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <td colspan="4" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Top 5 Best Rookie Receivers Based on Fantasy Production</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">Yeah Ja'Marr Chase is built a little different</td>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Player">Player</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Team">Team</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Year">Year</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Fantasy Points">Fantasy Points</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="name" class="gt_row gt_left">Ja'Marr Chase</td>
+<td headers="nfl_team" class="gt_row gt_left">Cincinnati</td>
+<td headers="year" class="gt_row gt_right">2021</td>
+<td headers="FantPt" class="gt_row gt_right">224</td></tr>
+    <tr><td headers="name" class="gt_row gt_left gt_striped">Odell Beckham Jr.</td>
+<td headers="nfl_team" class="gt_row gt_left gt_striped">New York</td>
+<td headers="year" class="gt_row gt_right gt_striped">2014</td>
+<td headers="FantPt" class="gt_row gt_right gt_striped">204</td></tr>
+    <tr><td headers="name" class="gt_row gt_left">Justin Jefferson</td>
+<td headers="nfl_team" class="gt_row gt_left">Minnesota</td>
+<td headers="year" class="gt_row gt_right">2020</td>
+<td headers="FantPt" class="gt_row gt_right">186</td></tr>
+    <tr><td headers="name" class="gt_row gt_left gt_striped">Mike Evans</td>
+<td headers="nfl_team" class="gt_row gt_left gt_striped">Tampa Bay</td>
+<td headers="year" class="gt_row gt_right gt_striped">2014</td>
+<td headers="FantPt" class="gt_row gt_right gt_striped">177</td></tr>
+    <tr><td headers="name" class="gt_row gt_left">Antonio Gibson</td>
+<td headers="nfl_team" class="gt_row gt_left">Washington</td>
+<td headers="year" class="gt_row gt_right">2020</td>
+<td headers="FantPt" class="gt_row gt_right">166</td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="4"><strong>By:</strong> Peter Educate |  <strong>Source:</strong> <a href="https://www.sports-reference.com/cfb/seasons/">Pro Football Reference</a></td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+</div>
+</div>
 <p>Well, I suppose my model does not expect anything too crazy from this receiver class this year unlike these superstars. Draft experts claimed that this was a weak class in terms of receiver talent but perhaps someone like Jayden Reed can outperform his expected production. Other receivers like Quentin Johnston may shine in some instances but expect less production. Ultimately, if you’re looking to draft a receiver for your fantasy team this upcoming season, stick with a veteran or take a swing on Jayden Reed.</p>
 <p>(Or just draft Ja’marr Chase).</p>
 
